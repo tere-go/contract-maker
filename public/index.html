@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Realty Contract</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <div class="header-left">
+                    <h1 class="title">The Realty Contract</h1>
+                    <p class="subtitle">Professional Real Estate Contract Management</p>
+                </div>
+                <div class="header-right">
+                    <button class="btn btn-template">Create a New Template</button>
+                </div>
+            </div>
+        </header>
+        
+        <main class="main-content">
+            <div class="form-container">
+                <h2 class="form-title">Agent Selection Form</h2>
+                <form id="contractForm" class="contract-form">
+                    <div class="form-group">
+                        <label for="agent" class="form-label">Agent</label>
+                        <select id="agent" name="agent" class="form-select">
+                            <option value="">Select agent</option>
+                        </select>
+                        <p id="agentEmail" class="agent-email" style="display: none;"></p>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="contractType" class="form-label">Choose Contract Type</label>
+                        <select id="contractType" name="contractType" class="form-select">
+                            <option value="">Select contract type</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="property" class="form-label">Choose a Property</label>
+                        <select id="property" name="property" class="form-select">
+                            <option value="">Select a property</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="sellerName" class="form-label">Seller's Name</label>
+                        <input type="text" id="sellerName" name="sellerName" class="form-input" placeholder="Enter seller's full name">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="buyerName" class="form-label">Buyer's Name</label>
+                        <input type="text" id="buyerName" name="buyerName" class="form-input" placeholder="Enter buyer's full name">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="placeOfSigning" class="form-label">Place of Signing</label>
+                        <input type="text" id="placeOfSigning" name="placeOfSigning" class="form-input" placeholder="Enter place of signing">
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="button" class="btn btn-secondary" onclick="clearForm()">Clear Form</button>
+                        <button type="submit" class="btn btn-primary">Submit Contract</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+        
+        <footer class="footer">
+            <p>&copy; 2024 The Realty Contract. All rights reserved.</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
